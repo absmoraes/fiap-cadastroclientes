@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "e07871fe-829d-492d-8663-93a5adda4561",
+		"name": "TrabalhoFiap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26795580"
+	},
+	"item": [
+		{
+			"name": "Usuário",
+			"item": [
+				{
+					"name": "Cadastro de usuário",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nomeusuario\": \"absmoraes\",\r\n        \"email\": \"absmoraes28@gmail.com\",\r\n        \"senha\": \"19283746\",\r\n        \"nomecompleto\": \"Adriano Moraes\",\r\n        \"telefone\": \"61 99999-0909\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/usuarios/cadastro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"usuarios",
+								"cadastro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login de usuário",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"nomeusuario\": \"absmoraes\",\r\n\t  \"senha\": \"19283746\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/usuarios/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alteração de senha de usuário",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzRiMDU4MDVkMTczYzAzMTM3M2EwNCIsImVtYWlsIjoiYWJzbW9yYWVzMjhAZ21haWwuY29tIiwiaWF0IjoxNjgxMTc1MDc5LCJleHAiOjE2ODExODIyNzl9.6TRBO9MJ2QngM5qvwTjxrW6zFOWcWrQU3qWYvb16I1A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"nomeusuario\": \"absmoraes\",\r\n      \"senha\": \"19283746\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/usuarios/atualizarsenha/6434b05805d173c031373a04",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"usuarios",
+								"atualizarsenha",
+								"6434b05805d173c031373a04"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Cadastro de cliente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzRiMDU4MDVkMTczYzAzMTM3M2EwNCIsImVtYWlsIjoiYWJzbW9yYWVzMjhAZ21haWwuY29tIiwiaWF0IjoxNjgxMjcwNTcyLCJleHAiOjE2ODEyNzc3NzJ9.pI47aTpywVBM4Naj23PpFn4J-HlYbbprG6KqYV1LTqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomecliente\": \"Fulano de Tal\",\r\n    \"cpf\": \"111.111.111-11\",\r\n    \"idade\": \"4.8\",\r\n    \"email\": \"fulano@gmail.com\",\r\n    \"telefone\": \"61 99999-0909\",\r\n    \"status\": \"ativo\",\r\n    \"datacriacao\": \"11/04/2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/clientes/cadastro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"clientes",
+								"cadastro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alteração de dados de clientes",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzRiMDU4MDVkMTczYzAzMTM3M2EwNCIsImVtYWlsIjoiYWJzbW9yYWVzMjhAZ21haWwuY29tIiwiaWF0IjoxNjgxMjQ2MzYzLCJleHAiOjE2ODEyNTM1NjN9.LSbP1ROeZt3e22wUPTxAeSWBg_i4zIWrAO91EDJn5Y8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomecliente\": \"Adriano Bastos e\",\r\n    \"cpf\": \"111.333.111-11\",\r\n    \"idade\": \"4.6\",\r\n    \"email\": \"absmoraes28@gmail.com\",\r\n    \"telefone\": \"61 99999-0909\",\r\n    \"status\": \"ativo\",\r\n    \"datacriacao\": \"11/04/2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/clientes/atualizardados/6435c8dc86fd451885f0098a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"clientes",
+								"atualizardados",
+								"6435c8dc86fd451885f0098a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lisagem de clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzRiMDU4MDVkMTczYzAzMTM3M2EwNCIsImVtYWlsIjoiYWJzbW9yYWVzMjhAZ21haWwuY29tIiwiaWF0IjoxNjgxMjQ2MzYzLCJleHAiOjE2ODEyNTM1NjN9.LSbP1ROeZt3e22wUPTxAeSWBg_i4zIWrAO91EDJn5Y8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/clientes/listarclientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"clientes",
+								"listarclientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
