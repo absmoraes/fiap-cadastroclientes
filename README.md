@@ -1,25 +1,19 @@
 # mbaFiap-adriano-cadastrousuarios
-  - Projeto de conclusão da disciplina de DESENVOLVIMENTO DE MICROSSERVIÇOS E APIS - MBA FIAP
-
+<br>
+Projeto de conclusão da disciplina de DESENVOLVIMENTO DE MICROSSERVIÇOS E APIS - MBA FIAP
 <br>
 
 ## Aluno 
   -  Adriano Bastos e Silva (rm344764)
-  
-<br>
-
-  ## Link gitHub:
-  - https://github.com/senafsc/mbaFiap-adrianoAndersonGustavoLuisPaulo-cadastro.git
-
 <br>
 
 ## Descrição:
-  - O Projeto consiste numa aplicação para realizar as seguintes funções relacionadas a uma cadastro de clientes do sistema:
+O Projeto consiste numa aplicação para realizar as seguintes funções relacionadas a uma cadastro de clientes do sistema:
   - Cadastrar cliente;
   - Alterar dados de clientes;
   - Listar todos os clientes;
  
-<br><br>
+<br>
 
 ## Requisitos:
 - node versão 14.19.1 ou superior;
@@ -34,9 +28,9 @@
     npm install && npm start
     ```
 
-# Rotas: incluido arquivo do postman para execução das requisições -> TrabalhoFiap.postman_collection.json
+## Rotas: 
 
-  ## - Cadastro de clientes:
+  ### - Cadastro de clientes:
   - **POST:**
     - http://localhost:3000/api/usuarios/cadastro
     
@@ -47,7 +41,7 @@
     - **status (500):**
       "Erra ao cadastrar"
   
-  ## - Listar todos os clientes:
+  ### - Listar todos os clientes:
   - **POST:**
     - http://localhost:3000/api/clientes/listarclientes
    
@@ -63,7 +57,7 @@
        "Erro ao processar a atualização"
 <br>
 
- ## - Atualizar dados do clientes:
+ ### - Atualizar dados do clientes:
   - **PUT:**
     - http://localhost:3000/api/clientes/atualizardados/:id
     
