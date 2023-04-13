@@ -4,7 +4,7 @@ Projeto de conclusão da disciplina de DESENVOLVIMENTO DE MICROSSERVIÇOS E APIS
 <br>
 
 ## Aluno 
-  -  Adriano Bastos e Silva (rm344764)
+  -  Adriano Bastos e Silva Moraes (rm344764)
 <br>
 
 ## Descrição:
